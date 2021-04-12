@@ -24,7 +24,7 @@ Where `Log` is the log message, in this case it'll be "Reset System".
 
 ## LCD display info
 
-The follow image show how the data is displayed in a 16x2 LCD.
+The following image shows how the data is displayed in a 16x2 LCD.
 
 ![alt text](https://github.com/Alejandro-ZZ/arduino-monitor/blob/master/LCD_Data.jpg)
 
@@ -32,11 +32,11 @@ The follow image show how the data is displayed in a 16x2 LCD.
 
 The system was used to monitor an 12V uninterrupted power supply (UPS) charge and discharge cycles. A total of 2426 data where taken. The system was executed for around 20 hours and data were recorded every 30s. Then, the `DATA.txt` file is proccessed with Excel and the following graphics were created. 
 
-**DISCHARGING CYCLE:** The discharge average current was around 1.25A.
+**`DISCHARGING CYCLE:`** The discharge average current was around 1.25A.
 
 ![alt text](https://github.com/Alejandro-ZZ/arduino-monitor/blob/master/Descarga_Bateria_12V.png)
 
 
-**CHARGING CYCLE:** Battery is charge at 500mA. The orange curve shows the current behavior and the blue one the voltage behavior.
+**`CHARGING CYCLE:`** Battery is charge at 500mA. The orange curve shows the current behavior and the blue one the voltage behavior.
 
 ![alt text](https://github.com/Alejandro-ZZ/arduino-monitor/blob/master/Carga_Bateria_12V.png)
