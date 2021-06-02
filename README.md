@@ -30,6 +30,19 @@ Data was analyzed by both Excel and Python code. For the second one, an script w
 
 **2.** The second part corresponds to the charge stage. Again, all the rows in data that refers to this stage are taken and saved in another CSV file named `2_Charge.csv`. Then the scripts reads all values for both columns: `Bateria[mV]`and `Current[A]`. Finally an XY chart with double Y axis is created and exported as an SVG file and named `2_Charge.svg`.
 
+## Diagram
+
+|           Component          |         Reference        |
+|:----------------------------:|:------------------------:|
+|          LCD Display         |         LCD 16x2         |
+|         I2C Converter        |          PCF8574         |
+|       Real Timer Clock       |       RTC - DS3231       |
+| Analog/Digital <br>Converter |      ADC <br>ADS1115     |
+|   Pro mini Arduino<br>Board  | Pro mini 328<br>5V/16MHz |
+|        MicroSD Module        |        MicroSD R/W       |
+
+![alt text](https://github.com/Alejandro-ZZ/arduino-monitor/blob/master/Connections.JPG)
+
 ## LCD display info
 
 The following image shows how the data is displayed in a 16x2 LCD.
