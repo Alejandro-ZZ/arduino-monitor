@@ -22,6 +22,14 @@ Where `Shunt_Bat[mV]` is the shunt resistor voltage and `Current[A]` the current
 
 Where `Log` is the log message, in this case it'll be "Reset System".
 
+## Plot script in Python
+
+Data was analyzed by both Excel and Python code. For the second one, an script was created to export an XY chart in an SVG file. For that, all data in `DATA.txt` is converted to a CSV file and separed in two parts (whit the same headers or columns of `DATA.txt` file): 
+
+**1.** The first one, for all data which points to the discharge stage; this is named as `1_Discharge.csv`. Then, the program reads the value in the `Bateria[mV]` columns for each row and creates an XY chart. Finally it's exported as an SVG file named `1_Discharge.svg`.
+
+**2.** The second part corresponds to the charge stage. Again, all the rows in data that refers to this stage are taken and saved in another CSV file named `2_Charge.csv`. Then the scripts reads all values for both columns: `Bateria[mV]`and `Current[A]`. Finally an XY chart with double Y axis is created and exported as an SVG file and named `2_Charge.svg`.
+
 ## LCD display info
 
 The following image shows how the data is displayed in a 16x2 LCD.
@@ -30,7 +38,7 @@ The following image shows how the data is displayed in a 16x2 LCD.
 
 ## Results and graphics
 
-The system was used to monitor an 12V uninterrupted power supply (UPS) charge and discharge cycles. A total of 2426 data where taken. The system was executed for around 20 hours and data were recorded every 30s. Then, the `DATA.txt` file is proccessed with Excel and the following graphics were created. 
+The system was used to monitor an 12V uninterrupted power supply (UPS) charge and discharge cycles. A total of 2426 data where taken. The system was executed for around 20 hours and data were recorded every 30s. Then, the `DATA.txt` file is proccessed with Excel, python script (`plot_script.py`)and the following graphics were created. 
 
 **`DISCHARGING CYCLE:`** The discharge average current was around 1.25A.
 
